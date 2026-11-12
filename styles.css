@@ -1,0 +1,44 @@
+:root {
+  --fondo: #ffffff;
+  --texto: #222222;
+  --acento: #2563eb;
+}
+
+body.oscuro {
+  --fondo: #14161a;
+  --texto: #e8e8e8;
+  --acento: #60a5fa;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  transition: background 0.2s, color 0.2s;
+}
+
+header, main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h2 {
+  color: var(--acento);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--acento);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--texto);
+  cursor: pointer;
+}
